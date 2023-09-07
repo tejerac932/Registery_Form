@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="./src/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="form-body">
+      <div class="row">
+        <div class="form-holder">
+          <div class="form-content">
+            <div class="form-items">
+              <h3>Register Today</h3>
+              <p>Fill in the data below.</p>
+              <form class="requires-validation" novalidate>
+                <p>
+                    <input type="text" placeholder="Full Name" id="fullname" name="fullname">
+                    <input type="email" placeholder="E-mail Address" id="email" name="email" autocomplete="off">
+                    <select name="positions" id="positions">
+                        <option value="select">Positions</option>
+                        <option value="Software Developer">Software Developer</option>
+                        <option value="Test Engineer">Test Engineer</option>
+                        <option value="Field Engineer">Field Engineer</option>
+                        <option value="Support Engineer">Support Engineer</option>
+                        <option value="Backend">Backend</option>
+                    </select>
+                    <input type="password" placeholder="Password" id="password" name="password">
+                </p>
+                <p>
+                    Gender:
+                    <input type="radio" class="btn-check" name="options" id="Male" autocomplete="off">
+                    <label class="btn btn-sm btn-outline-secondary" for="Male">Male</label>
+                    <input type="radio" class="btn-check" name="options" id="Female" autocomplete="off">
+                    <label class="btn btn-sm btn-outline-secondary" for="Female">Female</label>
+                    <input type="radio" class="btn-check" name="options" id="Secret" autocomplete="off" checked>
+                    <label class="btn btn-sm btn-outline-secondary" for="Secret">Secret</label>
+                </p>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="correct-data" autocomplete="off">
+                    <label class="form-check-label" for="correct-data">I confirm that all data are correct</label>
+                </div>
+                <div class="form-button mt-3">
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
